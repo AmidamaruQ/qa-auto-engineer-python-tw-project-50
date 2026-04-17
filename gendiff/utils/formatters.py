@@ -8,6 +8,7 @@ def _format_value(value):
         return 'null'
     return str(value)
 
+
 def formatter(diff_tree):
     result = "{\n"
     for key, value in diff_tree.items():

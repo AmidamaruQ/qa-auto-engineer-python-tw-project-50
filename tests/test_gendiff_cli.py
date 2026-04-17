@@ -7,7 +7,8 @@ def test_cli_prints_diff(test_data_dir):
     second_file = test_data_dir / "file2.json"
 
     completed = subprocess.run(
-        [sys.executable, "-m", "gendiff.scripts.gendiff", first_file, second_file],
+        [sys.executable, "-m",
+         "gendiff.scripts.gendiff", first_file, second_file],
         capture_output=True,
         text=True,
         check=True,

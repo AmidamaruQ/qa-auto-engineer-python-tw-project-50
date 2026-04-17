@@ -32,6 +32,7 @@ def get_diffs_tree(first_dict, second_dict):
 
     return diffs
 
+
 def generate_diff(first_file, second_file):
     first_dict = parse_file(first_file)
     second_dict = parse_file(second_file)

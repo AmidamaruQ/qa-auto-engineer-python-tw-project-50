@@ -1,5 +1,5 @@
-from os import PathLike
 import json
+from os import PathLike
 
 import yaml
 
