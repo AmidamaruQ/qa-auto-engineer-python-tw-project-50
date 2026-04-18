@@ -32,3 +32,19 @@ def test_generate_diff_uses_stylish_by_default(test_data_dir):
     expected = (test_data_dir / "expected_diff.txt").read_text().rstrip("\n")
 
     assert generate_diff(first_file, second_file, "stylish") == expected
+
+
+def test_generate_diff_plain_json(test_data_dir):
+    first_file = test_data_dir / "file1.json"
+    second_file = test_data_dir / "file2.json"
+    expected = (test_data_dir / "expected_plain.txt").read_text().rstrip("\n")
+
+    assert generate_diff(first_file, second_file, "plain") == expected
+
+
+def test_generate_diff_plain_yaml(test_data_dir):
+    first_file = test_data_dir / "file1.yml"
+    second_file = test_data_dir / "file2.yml"
+    expected = (test_data_dir / "expected_plain.txt").read_text().rstrip("\n")
+
+    assert generate_diff(first_file, second_file, "plain") == expected
