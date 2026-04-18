@@ -1,6 +1,7 @@
 from gendiff.formatters import format_diff
 from gendiff.scripts.parser import parse_file
 
+
 def get_diffs_tree(first_dict, second_dict):
     all_keys = sorted(first_dict.keys() | second_dict.keys())
 
