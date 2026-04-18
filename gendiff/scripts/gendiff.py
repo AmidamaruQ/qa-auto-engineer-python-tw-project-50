@@ -14,7 +14,7 @@ def main():
 
     args = parser.parse_args()
 
-    result = generate_diff(args.first_file, args.second_file)
+    result = generate_diff(args.first_file, args.second_file, args.format)
     print(result)
 
 
